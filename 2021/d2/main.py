@@ -3,7 +3,7 @@ from functools import reduce
 
 def read() -> list[tuple[int]]:
     res = []
-    with open("input.txt") as f:
+    with open("input.txt.txt") as f:
         for _ in f:
             op, change = _.split(" ")
             change = int(change)

@@ -29,7 +29,7 @@ def calc(s: str, iter: int):
 
 def main():
     global s
-    with open('input.txt') as f:
+    with open('input.txt.txt') as f:
         for x in f:
             if x[-1] == '\n':
                 x = x[:-1:]

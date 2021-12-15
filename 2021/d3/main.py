@@ -3,7 +3,7 @@ from functools import reduce
 
 def read():
     res = []
-    with open("input.txt") as f:
+    with open("input.txt.txt") as f:
         for x in f:
             res.append(x)
         f.close()

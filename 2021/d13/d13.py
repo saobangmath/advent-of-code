@@ -47,7 +47,7 @@ def mergeByY(y):
 
 def main():
     global b
-    with open('input.txt') as f:
+    with open('input.txt.txt') as f:
         for line in f:
             if line[-1] == '\n':
                 line = line[:-1:]

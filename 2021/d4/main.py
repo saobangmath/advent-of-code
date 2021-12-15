@@ -8,7 +8,7 @@ N = 5
 
 def read():
     global moves
-    with open('input.txt', 'r') as f:
+    with open('input.txt.txt', 'r') as f:
         moves = [int(_) for _ in f.readline().split(",")]
         stop = False
         id = 0

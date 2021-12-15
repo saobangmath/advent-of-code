@@ -4,7 +4,7 @@ cnt = 0
 
 
 def read():
-    with open('input.txt', 'r') as f:
+    with open('input.txt.txt', 'r') as f:
         for x in f:
             left, right = x.split(" -> ")
             x1, y1 = [int(_) for _ in left.split(",")]

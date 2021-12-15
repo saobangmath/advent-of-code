@@ -1,6 +1,6 @@
 def read():
     res = []
-    with open('input.txt', 'r') as f:
+    with open('input.txt.txt', 'r') as f:
         for _ in f:
             res.append(int(_))
         f.close()

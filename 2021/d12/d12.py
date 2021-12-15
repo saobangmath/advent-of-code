@@ -39,7 +39,7 @@ def dfs(start, goal, d, canTwice):
 
 
 def main():
-    with open('input.txt') as f:
+    with open('input.txt.txt') as f:
         for x in f:
             if x[-1] == '\n': x = x[:-1:]
             u, v = x.split("-")

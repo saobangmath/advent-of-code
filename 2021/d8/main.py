@@ -21,7 +21,7 @@ def fuck(x, d):
 
 def main():
     tot = 0
-    with open("input.txt") as f:
+    with open("input.txt.txt") as f:
         for x in f:
             if x[-1] == '\n': x = x[:-1:]
             x = x.split("|")

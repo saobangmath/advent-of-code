@@ -3,7 +3,7 @@ dirs = [[0,1],[0,-1], [1,0],[-1,0]]
 tot = 0
 
 def main():
-    with open('input.txt') as f:
+    with open('input.txt.txt') as f:
         for x in f:
             if x[-1] == "\n":
                 x = x[:-1:]
