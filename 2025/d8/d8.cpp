@@ -57,10 +57,14 @@ int part1(){
 
     std::sort(v.begin(), v.end());
     DisjointSet d(pts.size());
-    for (int i = 0; i < 1000;i++) {
+    for (int i = 0; i < 1000000;i++) {
         int x = v[i].second.first;
         int y = v[i].second.second;
         d.merge(x, y);
+        if (d.f[d.find(x)] == pts.size() || d.f[d.find(y)] == pts.size()){
+            cout << "Multiply of 2 X's coordinates: " << 1LL * pts[x][0] * pts[y][0] << endl;
+            break;
+        }
     }
 
     vector<int> sizes;
@@ -70,7 +74,6 @@ int part1(){
         }
     }
     sort(sizes.begin(), sizes.end());
-    cout << sizes[sizes.size() - 1] << " " << sizes[sizes.size() - 2] << " " << sizes[sizes.size() - 3] << endl;
     return sizes[sizes.size() - 1] * sizes[sizes.size() - 2] * sizes[sizes.size() - 3];
 }
 
