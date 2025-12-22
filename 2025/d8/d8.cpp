@@ -6,6 +6,8 @@
 
 using namespace std; 
 
+using i128 = __int128;
+
 vector<vector<int>> pts; 
     
 struct DisjointSet{
